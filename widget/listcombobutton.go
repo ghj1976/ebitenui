@@ -155,6 +155,7 @@ func (l *ListComboButton) createWidget() {
 func (l *ListComboButton) SetSelectedEntry(e interface{}) {
 	l.init.Do()
 	l.button.SetSelectedEntry(e)
+	l.list.SetSelectedEntry(e)
 }
 
 func (l *ListComboButton) SelectedEntry() interface{} {
